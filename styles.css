@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    /* font-family: 'Bai Jamjuree'; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+article h1 {
+    font-size: 24px;
+}
+
+article {
+    border-bottom: 2px solid black;
+}
+
+article:last-child {
+    border-bottom: none;    
+}
+
+:not(p) {
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 48px;
+    margin:10px;
+}
+
+.left-container {
+    width:60%;
+    margin-left:40%;
+    padding: 2.5% 10% 2.5% 10%;
+    height: 100vh;
+}
+
+.left-container nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-container nav ul li {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
+
+.left-container section {
+    flex:1;
+    padding-top: 5%;
+}
+
+.left-container .date {
+    margin-left: 0px;
+}
+
+.right-container {
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    width: 40%;
+    padding-top: 2.5%;
+    margin-bottom: 5%;
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.right-container nav{
+    flex:1;
+    
+}
+
+.right-container nav ul {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.right-container nav ul li {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 2px solid white;
+}
+
+
+
+.right-container .contents {
+    flex:5;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-container .contents .title {
+    font-size: 32px;
+}
+
+#fun-pen {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  opacity:0.9;
+  width: 300px;
+  height: 30px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .right-container {
+        position: relative;
+        width:100%;
+        justify-content: center;
+    }
+
+
+.right-container .contents {
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .left-container {
+        position: relative;
+        flex:1;
+        width: 80%;
+        margin: 0;
+    }
+
+    #fun-pen {
+        display: none;
+    }
+}
